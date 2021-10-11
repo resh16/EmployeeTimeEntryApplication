@@ -26,11 +26,6 @@ namespace BusinessLogic
             return result;
         }
 
-        public Task<ApplicationUser> GetId(string id)
-        {
-            var result = _accountDAL.GetId(id);
 
-            return result;
-        }
     }
 }

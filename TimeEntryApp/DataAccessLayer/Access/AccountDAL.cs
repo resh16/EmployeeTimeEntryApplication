@@ -13,11 +13,14 @@ namespace DataAccessLayer.Access
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly AppDbContext _db;
 
-        public AccountDAL(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+
+        public AccountDAL(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, AppDbContext db)
         {
             this._userManager = userManager;
             this._signInManager = signInManager;
+            _db = db;
         }
 
         public async Task<IdentityResult> CreateUser(Register model)
@@ -32,7 +35,7 @@ namespace DataAccessLayer.Access
 
             if (result.Succeeded && model.Admin == true)
             {
-                await _userManager.AddToRoleAsync(user, "Admin");
+                await _userManager.AddToRoleAsync(user, "Administrator");
             }
             else
             {
@@ -57,10 +60,6 @@ namespace DataAccessLayer.Access
             return res;
         }
 
-        public async Task<ApplicationUser> GetId(string id)
-        {
-            var user = await _userManager.FindByIdAsync(id);
-            return user;
-        }
+
     }
 }

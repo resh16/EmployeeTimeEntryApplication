@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "AdminDashboard";
+}
+
+@model IEnumerable<BusinessObjectLayer.Models.TimeEntry>
+
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered table-striped" style="width: 100%">
+            <thead>
+                <tr>
+                    <th> Employee Id </th>
+                    <th> Date </th>
+                    <th>  In Time </th>
+                    <th> Out Time  </th>
+                    <th> Total working time </th>
+                    <th> Total break time </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var entry in Model)
+                {
+                    <tr>
+                        <td> @ViewBag.UserId </td>
+                        <td> @entry.Date.ToString("D") </td>
+                        <td> @entry.InTime.ToString("hh:mm")</td>
+                        <td> @entry.OutTime.ToString("hh:mm") </td>
+                        <td> @entry.OutTime.Subtract(entry.InTime).TotalHours</td>
+                        <td>
+                            @foreach (var b in @entry.Breaks)
+                            {
+                                @b.BreakOut.Subtract(b.BreakIn).TotalHours
+                            }
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+    </div>
+</div>
+</div>

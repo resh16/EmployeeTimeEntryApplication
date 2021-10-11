@@ -14,19 +14,17 @@ namespace BusinessObjectLayer.Models
     public class Break
     {
         [Key]
-        [Column("ID")]
-        public int Id { get; set; }
-        [Column("EntryID")]
-        public int? TimeEntryId { get; set; }
-        [Column(TypeName = "datetime")]
-        [DataType(DataType.Time)]
-        public DateTime? BreakIn { get; set; }
-        [Column(TypeName = "datetime")]
-        [DataType(DataType.Time)]
-        public DateTime? BreakOut { get; set; }
+        public int BreakID { get; set; }
 
-        [ForeignKey(nameof(TimeEntryId))]
-        [InverseProperty("Breaks")]
-        public virtual TimeEntry Entry { get; set; }
+
+        [DataType(DataType.Time)]
+        public DateTime BreakIn { get; set; }
+
+
+        [DataType(DataType.Time)]
+        public DateTime BreakOut { get; set; }
+
+
+        public TimeEntry Entry { get; set; }
     }
 }

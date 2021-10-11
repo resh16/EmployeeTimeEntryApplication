@@ -18,8 +18,8 @@ namespace TimeEntry.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly AccountBL _accountBL;
 
-        public AuthenticationController(AccountBL acccount,SignInManager<ApplicationUser> _SignIn)
-        {         
+        public AuthenticationController(AccountBL acccount, SignInManager<ApplicationUser> _SignIn)
+        {
             _accountBL = acccount;
             _signInManager = _SignIn;
         }
@@ -36,7 +36,7 @@ namespace TimeEntry.Controllers
                 var result = await _accountBL.CheckUser(model);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("CreateEntry","TimeEntry");
+                    return RedirectToAction("Index", "TimeEntry");
                 }
 
                 ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
@@ -82,4 +82,3 @@ namespace TimeEntry.Controllers
 
     }
 }
-

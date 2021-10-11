@@ -309,7 +309,6 @@ D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net
 D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net5.0\Razor\Views\TimeEntry\Admin.cshtml.g.cs
 D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net5.0\Razor\Views\TimeEntry\CreateEntry.cshtml.g.cs
 D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net5.0\Razor\Views\TimeEntry\Index.cshtml.g.cs
 D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
@@ -323,3 +322,6 @@ D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net
 D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net5.0\Entry.pdb
 D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net5.0\Entry.genruntimeconfig.cache
 D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net5.0\Razor\Views\Admin\CreateRole.cshtml.g.cs
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net5.0\Razor\Views\TimeEntry\AddBreak.cshtml.g.cs
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net5.0\Razor\Views\TimeEntry\AdminDashboard.cshtml.g.cs
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net5.0\Razor\Views\TimeEntry\EmployeeDashboard.cshtml.g.cs

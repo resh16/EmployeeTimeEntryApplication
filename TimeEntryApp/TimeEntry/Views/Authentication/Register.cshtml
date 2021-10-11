@@ -1,80 +1,76 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Register";
 }
 @model BusinessObjectLayer.Models.Register
 
 
-<div class="row">
-    <div class="col-md-8 col-sm-12">
-        <form asp-action="Register" method="post">
-            <h4> User Registration</h4>
-            <hr />
-            <div asp-validation-summary="All" class="text-danger"></div>
-
-            <div class="form-group row">
-                <div class="col-md-2">
-                    <label asp-for="Name"></label>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card my-3 p-2">
+                <div class="card-header">
+                    <h3 class="mb-0"> Register </h3>
                 </div>
+                <div class="card-body">
+                    <form asp-action="Register" method="post">
 
-            </div>
-            <div class="col-md-10">
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
+                        <div class="mb-3 row">
+                            <label class="col-form-label col-lg-3 col-sm-2 text-sm-end" asp-for="Name">User Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" asp-for="Name">
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                        </div>
 
-            <div class="form-group row">
-                <div class="col-md-2">
-                    <label asp-for="Email"></label>
-                </div>
+                        <div class="mb-3 row">
+                            <label class="col-form-label col-lg-3 col-sm-2 text-sm-end" asp-for="Email">Email</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" asp-for="Email">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
 
-            </div>
-            <div class="col-md-10">
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
+                        <div class="mb-3 row">
+                            <label class="col-form-label col-lg-3 col-sm-2 text-sm-end" asp-for="Password">Password</label>
+                            <div class="col-sm-10">
+                                <input type="Password" class="form-control" asp-for="Password">
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                        </div>
 
-            <div class="form-group row">
-                <div class="col-md-2">
-                    <label asp-for="Password"></label>
-                </div>
+                        <div class="mb-3 row">
+                            <label class="col-form-label col-lg-3 col-sm-2 text-sm-end" asp-for="ConfirmPassword"> Confirm Password</label>
+                            <div class="col-sm-10">
+                                <input type="Password" class="form-control" asp-for="ConfirmPassword">
+                                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                            </div>
+                        </div>
 
-            </div>
-            <div class="col-md-10">
-                <input asp-for="Password" class="form-control" type="password" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
+                        <div class="mb-3 row">
+                            <label class="col-form-label col-sm-2 text-sm-end pt-sm-0" asp-for="Admin">If Admin</label>
+                            <div class="col-sm-10">
+                                <label class="form-check m-0">
+                                    <input type="checkbox" asp-for="Admin" class="form-check-input">
+                                    <span class="form-check-label"> Check me out </span>
+                                </label>
+                            </div>
+                        </div>
 
-            <div class="form-group row">
-                <div class="col-md-2">
-                    <label asp-for="ConfirmPassword"></label>
-                </div>
-
-            </div>
-            <div class="col-md-10">
-                <input asp-for="ConfirmPassword" class="form-control" type="password" />
-                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-            </div>
-
-            <div class="form-group row">
-                <label class="col-lg-3 col-form-label form-control-label" asp-for="Admin">If Admin</label>
-                <div class="col-lg-9">
-                    <input type="checkbox" asp-for="Admin" />
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-md-10">
-                    <input type="submit" class="btn btn-success" value="Register" />
+                        <div class="mb-3 row">
+                            <div class="col-sm-10 ms-sm-auto">
+                                <input class="btn btn-primary justify-content-center" type="submit" value="Register">
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-
-        </form>
+        </div>
     </div>
 </div>
+
+
+
 @section Scripts
 {
     <partial name="_ValidationScriptsPartial" />
 }
-
-

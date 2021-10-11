@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "EmployeeDashboard";
+}
+
+@model IEnumerable<BusinessObjectLayer.Models.TimeEntry>
+
+<div>
+    <div class="row">
+        <form asp-action="EmployeeDashboard" asp-controller="TimeEntry" method="get">
+            <div class="form-group row">
+                <div class="col-md-10">
+                    <input class="form-control" type="month" name="monthValue">
+                </div>
+                <div class="col-md-2">
+                    <input class="btn btn-primary btn-sm" type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-bordered table-striped" style="width: 100%">
+                <thead>
+                    <tr>
+                        <th> Date </th>
+                        <th>  In Time </th>
+                        <th> Out Time  </th>
+                        <th> Total working time </th>
+                        <th> Total break time </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var entry in Model)
+                    {
+                        <tr>
+                            <td> @entry.Date.ToString("D") </td>
+                            <td> @entry.InTime.ToString("hh:mm")</td>
+                            <td> @entry.OutTime.ToString("hh:mm") </td>
+                            <td> @entry.OutTime.Subtract(entry.InTime).TotalHours</td>
+                            <td>
+                                @foreach (var b in @entry.Breaks)
+                                {
+                                    @b.BreakOut.Subtract(b.BreakIn).TotalHours
+                                }
+                                @{
+
+                                }
+
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+</div>

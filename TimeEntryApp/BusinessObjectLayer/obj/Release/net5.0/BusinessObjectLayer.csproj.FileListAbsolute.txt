@@ -1,0 +1,12 @@
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessObjectLayer\bin\Release\net5.0\BusinessObjectLayer.deps.json
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessObjectLayer\bin\Release\net5.0\BusinessObjectLayer.dll
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessObjectLayer\bin\Release\net5.0\ref\BusinessObjectLayer.dll
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessObjectLayer\bin\Release\net5.0\BusinessObjectLayer.pdb
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessObjectLayer\obj\Release\net5.0\BusinessObjectLayer.csproj.AssemblyReference.cache
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessObjectLayer\obj\Release\net5.0\BusinessObjectLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessObjectLayer\obj\Release\net5.0\BusinessObjectLayer.AssemblyInfoInputs.cache
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessObjectLayer\obj\Release\net5.0\BusinessObjectLayer.AssemblyInfo.cs
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessObjectLayer\obj\Release\net5.0\BusinessObjectLayer.csproj.CoreCompileInputs.cache
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessObjectLayer\obj\Release\net5.0\BusinessObjectLayer.dll
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessObjectLayer\obj\Release\net5.0\ref\BusinessObjectLayer.dll
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessObjectLayer\obj\Release\net5.0\BusinessObjectLayer.pdb

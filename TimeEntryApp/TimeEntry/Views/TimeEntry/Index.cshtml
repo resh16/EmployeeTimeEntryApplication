@@ -4,41 +4,53 @@
     ViewData["Title"] = "Index";
 }
 
+@model IEnumerable<BusinessObjectLayer.Models.TimeEntry>
 
-<h3> working </h3>
 
-@*<div class="row justify-content-center justify-content-sm-start">
-        <div class="col-12 col-sm-2">
-            <a type="button" class="button btn-warning" asp-action="Dashboard"><span><i class="fa fa-chart-line"> Dashboard</i> </span></a>
-        </div>
-        <div class="col-12 col-sm-4 offset-sm-1 mt-5">
-            <h1>Emloyee Login</h1>
-        </div>
+
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered table-striped" style="width: 100%">
+            <thead>
+                <tr>
+                    <th> Entry ID </th>
+                    <th> Date </th>
+                    <th>  In Time </th>
+                    <th> Out Time  </th>
+                    <th> Breaks </th>
+                    <th> Add Break </th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var entry in Model)
+                {
+                    <tr>
+                        <td> @entry.Id  </td>
+                        <td> @entry.Date.ToString("D") </td>
+                        <td> @entry.InTime.ToString("hh:mm")</td>
+                        <td> @entry.OutTime.ToString("hh:mm") </td>
+                        <td>
+                            @foreach (var b in @entry.Breaks)
+                            {
+                                <P> Break In :  @b.BreakIn.ToString("hh:mm") </P>
+                                <p> Break Out :  @b.BreakOut.ToString("hh:mm") </p>
+                                <a class="btn btn-danger" asp-controller="TimeEntry" asp-action="DeleteBreak" asp-route-id="@b.BreakID" title="Delete Break"> Delete  </a>
+                            }
+
+                        </td>
+                        <td width="20%"><a class="btn btn-primary" asp-controller="TimeEntry" asp-action="AddBreak" asp-route-id="@entry.Id" title="add Break"> Add Break </a></td>
+                        <td width="20%"><a class="btn btn-danger" asp-controller="TimeEntry" asp-action="DeleteEntry" asp-route-id="@entry.Id" title="Delete Entry"> Delete  </a></td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
     </div>
-    <div class="row mt-2">
-        <div class="col-12 col-sm-8 align-items-center">
-            <div class="card" id="usercard">
-                <div class="card-body text-center">
-                    <p class="card-title">NAME: @Model.UserName</p>
-                    <p class="card-title">EMAIL: @Model.Email</p>
-                    <h5 class="card-text">ID: @Model.Id</h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-4">
-            <div class="d-grid gap-2">
-                <button class="button button-start btn-warning"><span><i class="fa fa-users"> Discussion</i> </span></button>
-            </div>
-            <div class="d-grid gap-2 mt-5">
-                <button class="button button-start btn-warning"><span><i class="fa fa-tasks"> Task</i> </span></button>
-            </div>
-            <div class="d-grid gap-2 mt-5">
-                <a type="button" class="button button-start btn-warning" asp-controller="Employee" asp-action="CreateEntry"><span><i class="fa fa-folder-plus"> Entry</i> </span></a>
-            </div>
-            <div class="d-grid gap-2 mt-5">
-                <button class="button button-start btn-warning"><span><i class="fa fa-user-cog"> Seetings</i> </span></button>
-            </div>
-        </div>
-    </div>*@
+</div>
+
+<a class="btn btn-primary" asp-controller="TimeEntry" asp-action="CreateEntry"> Create New Entry </a>
+
 
 

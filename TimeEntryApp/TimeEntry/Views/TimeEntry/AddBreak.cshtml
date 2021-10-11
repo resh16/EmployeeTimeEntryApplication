@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "AddBreak";
+}
+
+@model BusinessObjectLayer.Models.Break
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card my-3 p-2">
+                <div class="card-header">
+                    <h3 class="mb-0">Add New Break</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="AddBreak" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label" asp-for="BreakIn">Break-In</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" asp-for="BreakIn">
+                                <span asp-validation-for="BreakIn" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label" asp-for="BreakOut">Break-Out</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" asp-for="BreakOut">
+                                <span asp-validation-for="BreakOut" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label"></label>
+                            <div class="col-lg-9">
+                                <input class="btn btn-secondary" type="reset" value="Cancel">
+                                <input class="btn btn-primary" type="submit" value="Save Changes">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

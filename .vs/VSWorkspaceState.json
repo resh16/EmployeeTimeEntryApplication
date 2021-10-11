@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\TimeEntryApp",
+    "\\TimeEntryApp\\BusinessObjectLayer",
+    "\\TimeEntryApp\\DataAccessLayer",
+    "\\TimeEntryApp\\TimeEntry",
+    "\\TimeEntryApp\\TimeEntry\\Controllers",
+    "\\TimeEntryApp\\TimeEntry\\Models",
+    "\\TimeEntryApp\\TimeEntry\\Properties",
+    "\\TimeEntryApp\\TimeEntry\\Views"
+  ],
+  "SelectedNode": "\\TimeEntryApp\\DataAccessLayer\\DataAccessLayer.csproj",
+  "PreviewInSolutionExplorer": false
+}

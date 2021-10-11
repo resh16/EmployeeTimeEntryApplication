@@ -1,0 +1,17 @@
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessLogic\bin\Release\net5.0\BusinessLogic.deps.json
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessLogic\bin\Release\net5.0\BusinessLogic.dll
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessLogic\bin\Release\net5.0\ref\BusinessLogic.dll
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessLogic\bin\Release\net5.0\BusinessLogic.pdb
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessLogic\bin\Release\net5.0\BusinessObjectLayer.dll
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessLogic\bin\Release\net5.0\DataAccessLayer.dll
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessLogic\bin\Release\net5.0\BusinessObjectLayer.pdb
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessLogic\bin\Release\net5.0\DataAccessLayer.pdb
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessLogic\obj\Release\net5.0\BusinessLogic.csproj.AssemblyReference.cache
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessLogic\obj\Release\net5.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessLogic\obj\Release\net5.0\BusinessLogic.AssemblyInfoInputs.cache
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessLogic\obj\Release\net5.0\BusinessLogic.AssemblyInfo.cs
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessLogic\obj\Release\net5.0\BusinessLogic.csproj.CoreCompileInputs.cache
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessLogic\obj\Release\net5.0\BusinessLogic.csproj.CopyComplete
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessLogic\obj\Release\net5.0\BusinessLogic.dll
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessLogic\obj\Release\net5.0\ref\BusinessLogic.dll
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\BusinessLogic\obj\Release\net5.0\BusinessLogic.pdb
