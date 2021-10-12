@@ -3,51 +3,7 @@
 }
 
 @model BusinessObjectLayer.Models.TimeEntry
-@*<h1>CreateEntry</h1>
-    <h4>Entry</h4>
-    <hr />
-    <form method="post" asp-controller="TimeEntry" asp-action="CreateEntry">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h3>Entry Form</h3>
-                </div>
-            </div>
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="form-group row">
-                <div class="col-md-2">
-                    <label asp-for="Date"></label>
-                </div>
-            </div>
-            <div class="col-md-10">
-                <input asp-for="Date" class="form-control" />
-                <span asp-validation-for="Date" class="text-danger"></span>
-            </div>
-            <div class="form-group row">
-                <div class="col-md-2">
-                    <label asp-for="InTime"></label>
-                </div>
-            </div>
-            <div class="col-md-10">
-                <input asp-for="InTime" class="form-control" />
-                <span asp-validation-for="InTime" class="text-danger"></span>
-            </div>
-            <div class="form-group row">
-                <div class="col-md-2">
-                    <label asp-for="OutTime"></label>
-                </div>
-            </div>
-            <div class="col-md-10">
-                <input asp-for="OutTime" class="form-control" />
-                <span asp-validation-for="OutTime" class="text-danger"></span>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-12 col-sm-2 offset-sm-8">
-                    <input type="submit" class="btn bts" value="save" />
-                </div>
-            </div>
-        </div>
-    </form>*@
+
 
 <div class="container">
     <div class="row justify-content-center">
@@ -56,6 +12,8 @@
                 <div class="card-header">
                     <h3 class="mb-0"> Create Entry </h3>
                 </div>
+               
+
                 <div class="card-body">
                     <form method="post" asp-controller="TimeEntry" asp-action="CreateEntry">
 
@@ -85,8 +43,10 @@
 
                         <div class="mb-3 row">
                             <div class="col-sm-10 ms-sm-auto">
-                                <input class="btn btn-primary justify-content-center" type="submit" value="Save">
+                                <input class="btn btn-primary justify-content-center" type="submit" value="Save" onclick="return alert('Entry added successfully')">
                             </div>
+
+
                         </div>
                     </form>
                 </div>

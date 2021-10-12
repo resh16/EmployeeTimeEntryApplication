@@ -36,12 +36,12 @@
                             {
                                 <P> Break In :  @b.BreakIn.ToString("hh:mm") </P>
                                 <p> Break Out :  @b.BreakOut.ToString("hh:mm") </p>
-                                <a class="btn btn-danger" asp-controller="TimeEntry" asp-action="DeleteBreak" asp-route-id="@b.BreakID" title="Delete Break"> Delete  </a>
+                                <a class="btn btn-danger" asp-controller="TimeEntry" asp-action="DeleteBreak" asp-route-id="@b.BreakID" onclick="return confirm('Are you sure to delete the entry?')" title="Delete Break" ><i class="fas fa-trash-alt"></i>  Delete </a>
                             }
 
                         </td>
                         <td width="20%"><a class="btn btn-primary" asp-controller="TimeEntry" asp-action="AddBreak" asp-route-id="@entry.Id" title="add Break"> Add Break </a></td>
-                        <td width="20%"><a class="btn btn-danger" asp-controller="TimeEntry" asp-action="DeleteEntry" asp-route-id="@entry.Id" title="Delete Entry"> Delete  </a></td>
+                        <td width="20%"><a class="btn btn-danger" asp-controller="TimeEntry" asp-action="DeleteEntry" asp-route-id="@entry.Id" onclick="return confirm('Are you sure to delete the entry?')" title="Delete Entry"  ><i class="fas fa-trash-alt"></i> Delete </a></td>
                     </tr>
                 }
 

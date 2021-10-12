@@ -48,6 +48,12 @@ namespace TimeEntry
 
             services.AddScoped<EntryBL>();
             services.AddScoped<EntryDAL>();
+
+            services.ConfigureApplicationCookie(config =>
+            {
+                config.LoginPath = "/Authentication/Login";
+               config.AccessDeniedPath = "/TimeEntry/Accessdenied";
+            });
             
         }
 

@@ -20,6 +20,9 @@ namespace Entry.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly AppDbContext _db;
 
+
+     
+
         public TimeEntryController(EntryBL entryBL, AccountBL accountBL, UserManager<ApplicationUser> userManager, AppDbContext db)
         {
             _entryBL = entryBL;
@@ -28,7 +31,7 @@ namespace Entry.Controllers
             _db = db;
         }
 
-
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             List<BusinessObjectLayer.Models.TimeEntry> entries = new List<BusinessObjectLayer.Models.TimeEntry>();
@@ -54,6 +57,7 @@ namespace Entry.Controllers
 
         public IActionResult CreateEntry()
         {
+           
             return View();
         }
 
@@ -76,6 +80,7 @@ namespace Entry.Controllers
                 else
                 {
                     _entryBL.CreateEntry(user, entry);
+                    return RedirectToAction("Index");
                 }
             }
 
@@ -114,6 +119,7 @@ namespace Entry.Controllers
                 else
                 {
                     _entryBL.CreateBreak(user, id, @break);
+                    return RedirectToAction("Index");
                 }
             }
 
@@ -137,6 +143,7 @@ namespace Entry.Controllers
                 else
                 {
                     _entryBL.DeleteEntry(user, id);
+                    return RedirectToAction("Index");
                 }
             }
             return RedirectToAction("Index");
@@ -160,12 +167,13 @@ namespace Entry.Controllers
                 else
                 {
                     _entryBL.DeleteBreak(user, id);
+                    return RedirectToAction("Index");
                 }
             }
             return RedirectToAction("Index");
         }
 
-
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> EmployeeDashboard(DateTime monthValue, TotalBreak breaks)
         {
@@ -194,6 +202,7 @@ namespace Entry.Controllers
             return View(entry);
         }
 
+        [Authorize]
         [Authorize(Roles = "Administrator")]
         [HttpGet]
         public IActionResult AdminDashboard(BusinessObjectLayer.Models.TimeEntry entry)
@@ -217,6 +226,12 @@ namespace Entry.Controllers
             }
 
             return View(entries);
+        }
+
+
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
     }
 }

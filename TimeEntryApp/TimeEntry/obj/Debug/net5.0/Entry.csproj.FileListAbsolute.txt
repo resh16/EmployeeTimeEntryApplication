@@ -325,3 +325,4 @@ D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net
 D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net5.0\Razor\Views\TimeEntry\AddBreak.cshtml.g.cs
 D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net5.0\Razor\Views\TimeEntry\AdminDashboard.cshtml.g.cs
 D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net5.0\Razor\Views\TimeEntry\EmployeeDashboard.cshtml.g.cs
+D:\Training\EmployeeManagement\MVC_Exercise\TimeEntryApp\TimeEntry\obj\Debug\net5.0\Razor\Views\TimeEntry\AccessDenied.cshtml.g.cs
